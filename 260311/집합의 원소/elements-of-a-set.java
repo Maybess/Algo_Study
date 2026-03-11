@@ -13,7 +13,7 @@ public class Main {
     public static void union(int a, int b){
         int rootA =find(a);
         int rootB =find(b);
-        if(rootA == rootB)
+        if(rootA != rootB)
         {
             parent[rootB] = rootA;
         }
